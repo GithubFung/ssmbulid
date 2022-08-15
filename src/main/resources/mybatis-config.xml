@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 首先关联数据库：创建database.properties -->
+    <!-- 配置数据源，交给Spring去做 -->
+    <!-- mybatis做两件事：
+        1.取别名
+        2.映射mappers配置文件
+     -->
+
+    <!-- 取别名 -->
+    <typeAliases>
+        <package name="com.feng.pojo"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper class="com.feng.dao.BookMapper"/>
+    </mappers>
+</configuration>
+
+<!-- Mybatis核心配置文件 -->

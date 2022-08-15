@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ssmbulid:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ssmbulid_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ssmbulid/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ssmbulid" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
