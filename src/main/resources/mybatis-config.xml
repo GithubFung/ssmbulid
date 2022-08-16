@@ -3,6 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
     <!-- 首先关联数据库：创建database.properties -->
     <!-- 配置数据源，交给Spring去做 -->
     <!-- mybatis做两件事：
@@ -16,7 +21,7 @@
     </typeAliases>
 
     <mappers>
-        <mapper class="com.feng.dao.BookMapper"/>
+        <mapper resource="com/feng/dao/BookMapper.xml"/>
     </mappers>
 </configuration>
 

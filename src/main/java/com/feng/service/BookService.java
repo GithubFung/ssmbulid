@@ -1,6 +1,7 @@
 package com.feng.service;
 
 import com.feng.pojo.Books;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -24,4 +25,7 @@ public interface BookService {
 
     //查询全部书
     List<Books> queryAllBook();
+
+    //查询书籍
+    Books queryBookByName(String bookName);
 }
